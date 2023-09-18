@@ -18,11 +18,11 @@ my_favorite_songs = [
     ['In This World', 4.02],
 ]
 
-# new_song = my_favorite_songs[1][1] 
-# out_song = my_favorite_songs[3][1]
-# nowhere_song = my_favorite_songs[8][1]
-# summa_songs = new_song + out_song + nowhere_song
-# print('Три песни звучат -', summa_songs, 'минут')
+ new_song = my_favorite_songs[1][1] 
+ out_song = my_favorite_songs[3][1]
+ nowhere_song = my_favorite_songs[8][1]
+ summa_songs = new_song + out_song + nowhere_song
+ print('Три песни звучат -', summa_songs, 'минут')
 
 # Пункт B. 
 # Есть словарь песен 
@@ -40,11 +40,11 @@ my_favorite_songs_dict = {
     'Nowhere to Run': 2.58,
     'In This World': 4.02,
 }
-# waste_song = my_favorite_songs_dict['Waste a Moment']
-# easy_song = my_favorite_songs_dict['Easy']
-# beautiful_song = my_favorite_songs_dict['Beautiful Day']
-# summa_songs = waste_song + easy_song + beautiful_song
-# print('Три песни звучат -', summa_songs, 'минут')
+ waste_song = my_favorite_songs_dict['Waste a Moment']
+ easy_song = my_favorite_songs_dict['Easy']
+ beautiful_song = my_favorite_songs_dict['Beautiful Day']
+ summa_songs = waste_song + easy_song + beautiful_song
+ print('Три песни звучат -', summa_songs, 'минут')
 
 
 
