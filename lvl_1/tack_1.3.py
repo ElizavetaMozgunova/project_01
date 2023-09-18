@@ -17,24 +17,4 @@
     # Такого месяца нет!
 
 user_input = input('Введите номер месяца:')
-month = int(user_input)
-print('Вы ввели', month)
-month31 = [1, 3, 5, 7, 8, 10, 12]
-month30 = [4, 6, 9, 11]
-month28 = [2]
-for i in month31:
-    if month == i:
-            print(31)
 
-for l in month30:
-    if l == month30:
-        print(30)
-
-for k in month28:
-    if k == month28:
-        print(28)
-
-if month >= 13:
-    print('Нет такого месяца!')
-else:
-    pass
