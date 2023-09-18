@@ -15,19 +15,3 @@
 
 # def maximum(arr):
 #     pass
-A = []
-max_ = float('-inf')                        
-min_ = float('inf')                         
-a = int(input('Введите целое число...'))   
-c = int(input('Введите целое число...'))
-d = int(input('Введите целое число...'))
-e = int(input('Введите целое число...'))
-f = int(input('Введите целое число...'))
-A += a, c, d, e, f
-for i in A:
-    if i > max_:
-        max_ = i                         
-    if i < min_:                            
-        min_ = i                            
-
-print(f'Максимальное: {max_}' , f'Минимальное: {min_}')
