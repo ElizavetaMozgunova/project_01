@@ -62,7 +62,15 @@ print(random.sample(my_favorite_songs, 3))
 # Переведите минуты и секунды в формат времени. Используйте модуль datetime
 
 
-
+import datetime
+def convert_time(minutes, seconds):
+    time_format = datetime.timedelta(minutes=minutes, seconds=seconds)
+    return str(time_format)
+for song, timing in my_favorite_songs_dict.items():
+    minutes = int(timing)
+    seconds = int((timing - minutes) * 60)
+    time_format = convert_time(minutes, seconds)
+    print(song + ": " + time_format)
 
 
 
