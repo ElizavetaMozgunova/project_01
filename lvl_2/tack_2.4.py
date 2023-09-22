@@ -8,7 +8,14 @@
 # foo("Oh, no!!!") -> "Oh, no"
 
 def remove_exclamation_marks(s):
- return s.replace("!", "")
+ new_string = ""
+ for char in s:
+    if char != "!":
+            new_string += char
+ return new_string
+print(remove_exclamation_marks("Hi! Hello!"))  # "Hi Hello"
+print(remove_exclamation_marks(""))  # ""
+print(remove_exclamation_marks("Oh, no!!!"))  # "Oh, no"
 
 
 # Пункт B.
@@ -18,7 +25,15 @@ def remove_exclamation_marks(s):
 # remove("!Hi") == "!Hi"
 
 def remove_last_em(s):
-    pass
+     if len(s) == 0:
+        return s
+     last_char = s[-1]
+     if last_char == "!":
+        return s[:-1]
+print(remove_last_em("Hi!"))  # "Hi"
+print(remove_last_em("Hi!!!"))  # "Hi!!"
+print(remove_last_em("!Hi"))  # "!Hi"
+
 
 
 # Дополнительно
@@ -36,20 +51,18 @@ def remove_last_em(s):
 # remove("Hi! !Hi! Hi!") === "!Hi!"
 
 def remove_word_with_one_em(s):
-    pass
-
-
-
-def _test_remove_comments():
-  """
-  Unit test for L{_remove_comments}.
-  """
-  s = '/*d s kjlsdf */*//*/*//**/**/*//**/a' * 50
-  assert len(_remove_comments(s)) == len(s)
-  s = '/**/' * 50 + '/*5845*/*/*//*/**/dfd'+'/*//**//'
-  assert len(_remove_comments(s)) == len(s)
-  s = 'a/**/' * 50 + '/**//**/////***/****/*//**//*/' * 5
-  assert len(_remove_comments(s)) == len(s)
-  s = 'hi /* foo */ hello /* bar!!!!! \n\n */ there!'
-  assert _remove_comments(s) ==                                     \
-         'hi           hello                   there!'
+    words = s.split()
+    new_words = []
+    for word in words:
+         exclamation_count = word.count("!")
+         if exclamation_count != 1:
+            new_words.append(word)
+            new_string = " ".join(new_words)
+            return new_string
+print(remove_word_with_one_em("Hi!"))  # ""
+print(remove_word_with_one_em("Hi! Hi!"))  # ""
+print(remove_word_with_one_em("Hi! Hi! Hi!"))  # ""
+print(remove_word_with_one_em("Hi Hi! Hi!"))  # "Hi"
+print(remove_word_with_one_em("Hi! !Hi Hi!"))  # ""
+print(remove_word_with_one_em("Hi! Hi!! Hi!"))  # "Hi!!"
+print(remove_word_with_one_em("Hi! !Hi! Hi!"))  # "!Hi!"
