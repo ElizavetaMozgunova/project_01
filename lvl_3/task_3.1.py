@@ -27,34 +27,6 @@
 #   - проявите фантазию :)
 
 
-# import random
-# class Matrix:
-#   def init_(self, rows, columns):
-#     self.rows = rows
-#     self.columns = columns
-#     self.data = [[None for _ in range(columns)for _ in range(rows)]]
-
-#   def set_value(self, row, column, value):
-#     self.data[row][column] = value
-  
-#   def get_value(self, row,column):
-#     return self.data[row][column]
-  
-#   def print_size(self):
-#     print('Число строк:', self.rows)
-#     print('Число колнок:',self.columns)
-
-#     matrix = Matrix(3, 4)
-#     matrix.set_value(0, 0, 1)
-#     matrix.set_value(0, 1, 2)
-#     matrix.set_value(1, 2, 3)
-#     matrix.set_value(2, 3, 4)
-
-#     print(matrix.get_value(0, 1)) 
-#     print(matrix.get_value(1, 2)) 
-#     print(matrix.get_value(2, 3))
-
-#     matrix.print_size()
 
 
 import random
